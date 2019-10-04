@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+nav {
+    font-family: 'Roboto Mono', monospace;
+    background-color: green;
+    height: 40%;
+    border: none;
+    margin: none;
+    padding: 10px;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    width: 80%;
+}
+#artDiv {
+    width: 60%;
+    padding: 20px;
+}
+
+article {
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: gray;
+    border: gray;
+    color: white;
+    border-radius: 3px;
+    text-align: justify;
+    font-size: 10px;
+    text-size-adjust: inherit;
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;  
+    background: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: auto;
+}
