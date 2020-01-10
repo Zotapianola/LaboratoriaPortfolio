@@ -1,61 +1,118 @@
 html {
-  display: flex;
-  justify-content: center;
   margin: 0;
-  font-family: "Roboto Mono", monospace;
-}
-
-h1 {
-  font-size: medium;
-  font-weight: normal;
-  margin: 0;
-  padding: 6px 0px;
-}
-
-table {
-  width: 100%;
-  height: 88%;
-  border-color: white;
-  color: yellow;
-}
-
-ul {
-  list-style-type: none;
-  text-align: left;
-}
-
-li {
-  padding: 6px;
-}
-
-#rojito span {
-  background-color: red;
-  color: white;
+  font-family: "Fira Mono", monospace;
+  line-height: 1.15
 }
 
 body {
-  height: 100vh;
-  width: 90vw;
-  background-color: black;
+  background-color: #00303E;
   margin: 0;
+  color: #EFE158;
+  display: grid;
+  max-width: 1900px;
+  gap: 3rem;
+  padding: 0px 3rem;
+  margin: 5rem auto;
+  font-size: 2rem;
+  overflow-y: scroll;
+}
+
+header {
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+#tiny-p {
+  font-size: small;
+  color: #66D9EF;
+}
+
+header a {
+  color: #ffc600;
+  font-weight: 500;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #EB4471;
+  font-style: italic;
+}
+
+h3 {
+  color:  #EB4471;
+}
+
+.tags {
+  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tags-label {
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 2px;
+  border-radius: 3px;
+  padding: 5px;
+  transition: #EB4471 0.2s ease 0s;
+}
+
+input {
+  overflow: visible;
+  text-rendering: auto;
+  color: -internal-light-dark-color(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  -webkit-rtl-ordering: logical;
+  text-shadow: none;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+span-tag {
+  font-size: 1rem;
   color: white;
+  margin-left: 5px;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+span {color: white}
+
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+::selection {
+  color: #EB4471;
 }
 
 section {
+  display: block;
   text-align: center;
   box-sizing: inherit;
-  background-color: rgb(12, 67, 219);
   font-size: 16px;
-  width: 100%;
-  height: 90%;
+  width: 80%;
   margin: auto;
 }
 
-#last-col li {
-  color: white;
-  padding: 0px;
-  margin: 0px;
+.frame {
+  border: white 1px solid;
+  border-radius: 4px;
+  padding: 20px;
 }
